@@ -675,11 +675,14 @@ def construct_nerf(key, batch_size: int, embeddings_dict: Dict[str, int],
     model: nn.Model. Nerf model with parameters.
     state: flax.Module.state. Nerf model state for stateful parameters.
   """
+
+  print('[construct_nerf] creating nerf model ...')
   model = NerfModel(
       embeddings_dict=immutabledict.immutabledict(embeddings_dict),
       near=near,
       far=far)
 
+  print('[construct_nerf] init rays dict')
   init_rays_dict = {
       'origins': jnp.ones((batch_size, 3), jnp.float32),
       'directions': jnp.ones((batch_size, 3), jnp.float32),
@@ -697,11 +700,15 @@ def construct_nerf(key, batch_size: int, embeddings_dict: Dict[str, int],
       'hyper_sheet_alpha': 0.0,
   }
 
+  print('[construct_nerf] random.split')
   key, key1, key2 = random.split(key, 3)
+
+  print('[construct_nerf] model.init')
   params = model.init({
       'params': key,
       'coarse': key1,
       'fine': key2
   }, init_rays_dict, extra_params=extra_params)['params']
 
+  print('[construct_nerf] done')
   return model, params
