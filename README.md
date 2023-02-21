@@ -24,9 +24,9 @@ on how to train on your own machine.
 
 | Description      | Link |
 | ----------- | ----------- |
-| Process a video into a dataset| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google/nerfies/blob/main/notebooks/Nerfies_Capture_Processing.ipynb)|
-| Train HyperNeRF| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google/hypernerf/blob/main/notebooks/HyperNeRF_Training.ipynb)|
-| Render HyperNeRF Videos| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/google/hypernerf/blob/main/notebooks/HyperNeRF_Render_Video.ipynb)|
+| Process a video into a dataset| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1EGEN2HDTWXUeya4RX1441T24evMxk1i9)|
+| Train HyperNeRF| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IWx5sDG_rObznoEqPG9F5da55xeI_XMf)|
+| Render HyperNeRF Videos| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HWbolef9y-wnheE8V8bmfXM_KF4T2lQX)|
 
 
 ## Setup
